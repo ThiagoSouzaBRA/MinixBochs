@@ -1,0 +1,9 @@
+romimage: file=BIOS-bochs-latest
+megs: 512
+vgaromimage: file=VGABIOS-elpin-2.40
+ata0-slave: type=cdrom, path=minix.iso, status=inserted
+ata1-master: type=disk, path=minix.img, mode=flat
+log: out.bochs
+mouse: enabled=0
+cpu: ips=15000000
+boot: disk
